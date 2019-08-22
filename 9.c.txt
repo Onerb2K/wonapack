@@ -1,0 +1,56 @@
+/*9) Crie um programa que recebe um número inteiro positivo X e imprime uma
+aproximação do resultado inteiro da raiz cúbica de X. A raíz cúbica de X
+pode ser definida como , quando .
+Observações.:
+? Neste exercício não deve ser usada qualquer biblioteca matemática.
+? O resultado da raiz cúbica de X, ou seja i, deve resultar no número
+mais próximo possível de X.
+? Ex.:
+Entrada: X = 50
+Para i = 3, temos 3*3*3 = 27, sendo que |50 - 27| = 23
+Para i = 4, temos 4*4*4 = 64, sendo que |50 - 64| = 14 (mais próximo
+de 50)
+para i = 5, temos 5*5*5 = 125, sendo que |50 - 125| = 75 (menos
+próximo)
+Saída: 4
+*/
+#include <stdio.h>
+
+int main()
+{
+    int x;
+    int i=0;
+    int mult;
+    int dif,dif2;
+    int res;
+    printf("Digite um numero inteiro positivo\n");
+    scanf("%i",&x);
+    
+    mult=i*i*i; // raiz cubica 
+    dif=x-mult;
+    if(dif<0)
+    {
+        dif=-dif;
+    }
+    i++;
+    mult=i*i*i;
+    dif2=x-mult;
+    if(dif2<0)
+    {
+        dif2=-dif2;
+    }
+    i++;
+    while(dif2<dif)
+    {
+        dif=dif2;
+        mult=i*i*i;
+        dif2=x-mult;
+        if(dif2<0)
+        {
+            dif2=-dif2;
+        }
+        i++;
+    }
+    res=i-2;
+    printf("%d", res);
+}
