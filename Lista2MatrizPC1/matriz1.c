@@ -4,7 +4,7 @@ vetor de ponto flutuantes de precisão simples (float) de tamanho 10 fornecido
 pelo usuário. A fórmula do desvio padrão é dada abaixo:
 */
 #include <stdio.h>
-#define tam 3
+#define tam 10
 #include <math.h>
 
 int main(void){
