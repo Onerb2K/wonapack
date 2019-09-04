@@ -104,16 +104,16 @@ void preenche(Pilha A, int v[]){ // recebe um vetor e uma pilha
  (apenas os números) que estão estacionados numa rua sem saída estreita. Dado uma placa verifique se o carro está 
  stacionado na rua. Caso esteja, informe a sequência de carros que deverá ser retirada para que o carro em questão consiga sair.
  */
- void carro(Pilha A, Pilha B, int placa){
+ void carro(Pilha A, Pilha B, int placa){// 2 pilhas e uma placa
  Pilha B;
  int g, contador = 0;
- while(empty(A) != 0){
-  g = pop(&A);
-  if(g == placa){
+ while(empty(A) != 0){ //enquanto pilha for maior que 0 
+  g = pop(&A); // g recebe o primeiro elemento de A
+  if(g == placa){ //Se g == placa, sendo g o primeiro elemento da pilha
    printf("Tem que tirar %d carros\n", contador);
-   while(empty(B) != 0){
-    push(&A, g);
-    g = pop(&B);
+   while(empty(B) != 0){ //enquanto for > que 0, existir algo na pilha 
+    push(&A, g);//
+    g = pop(&B);// g = desempilha o primeiro de b
    }
    break;
   }
