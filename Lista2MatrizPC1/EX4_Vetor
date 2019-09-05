@@ -1,0 +1,33 @@
+
+/*
+● Receber do usuário um vetor de inteiros (0 ou 1) de 8 posições;
+● Imprimir o valor decimal do número em binário expresso pelo vetor;
+● Receber do usuário um número inteiro referente ao deslocamento à esquerda
+da instrução SLL;
+● Imprimir o vetor resultante após o SLL;
+● Imprimir o valor decimal do número em binário expresso pelo vetor resultante.
+*/
+#include <stdio.h>
+#define tam 8
+int main(void)
+{
+    int vetor[tam];
+    int j = 0,dec = 0;
+    int sll;
+    int i;
+    for( i = 0 ; i < tam ; i++)  // Para preencher o vetor precisamos de um laço
+    {
+        printf("Entre com os elementos do vetor de tam 8 , APENAS 0s e 1s\n" );
+        scanf("%d",&vetor[i]); // cada posição do vetor recebe um valor
+    }
+    for( i = 0 ; i < tam ; i++){ // Para imprimir um vetor tambem precisamos de um laço
+		printf("elemento %d : %d \n",j, vetor[i] ); // imprimindo os elementos 1 por 1
+		j++;
+}
+      for(i = 0; vetor[i] > 0; i++)
+    {
+        dec = dec + pow(2, i) * (vetor[i] % 10);
+        vetor[i] = vetor[i] / 10;
+    }
+    printf("O valor decimal equivalente %d\n", dec);
+}
