@@ -1,3 +1,6 @@
+/*Entrada: “Kobe 1” “Larry 3” “Lebron 4” “Kidd 2” “Shaquille 5”
+Saída: “Kobe armador, Kidd armador, Larry ala, Lebron ala, Shaquille pivo”
+*/
 #include <stdio.h>
 #include <string.h>
 
