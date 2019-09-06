@@ -3,47 +3,45 @@
 
 int main(void)
 {
-    char jogador[5][20];
-    int posicao[5];
+    char jogador[5][20]; 
+    int pos[5];
     int i;
-    int maior;
-
     for(i=0; i<5; i++)
     {
         printf("Digite o nome do jogador e sua posicao de 1 a 5:");
-        scanf("%s %d", jogador[i], &posicao[i]);
-        getchar();
+        scanf("%s %d", jogador[i], &pos[i]);
+        getchar();//ignorar o espaço
     }
-    for(i=0; i<5; i++)
+    for(i=0; i<5; i++)// imprimindo 
     {
-        if(posicao[i]==1)
+        if(pos[i]==1) // simulando a ordem por posição(alfabetica)
         {
             printf("%s Armador\n", jogador[i]);
         }
     }
      for(i=0; i<5; i++)
     {
-        if(posicao[i]==2)
+        if(pos[i]==2)
         {
             printf("%s Armador\n", jogador[i]);
         }
     }
     for(i=0; i<5; i++){
-        if(posicao[i]==3)
+        if(pos[i]==3)
         {
             printf("%s Ala\n", jogador[i]);
         }
     }
     for(i=0; i<5; i++)
     {
-        if(posicao[i]==4)
+        if(pos[i]==4)
         {
             printf("%s Ala\n", jogador[i]);
         }
     }
     for(i=0; i<5; i++)
     {
-        if(posicao[i]==5)
+        if(pos[i]==5)
         {
             printf("%s Pivo\n", jogador[i]);
         }
