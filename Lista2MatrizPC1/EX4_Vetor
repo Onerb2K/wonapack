@@ -8,7 +8,8 @@ da instrução SLL;
 ● Imprimir o valor decimal do número em binário expresso pelo vetor resultante.
 */
 #include <stdio.h>
-#define tam 8
+#define tam 3
+#include <math.h>
 int main(void)
 {
     int vetor[tam];
@@ -23,11 +24,38 @@ int main(void)
     for( i = 0 ; i < tam ; i++){ // Para imprimir um vetor tambem precisamos de um laço
 		printf("elemento %d : %d \n",j, vetor[i] ); // imprimindo os elementos 1 por 1
 		j++;
-}
-      for(i = 0; vetor[i] > 0; i++)
+    }
+    printf("Entre com o valor para SLL \n");
+    scanf("%d",&sll);
+    j = 0; // só pra resetar o print mesmo
+
+       /* for(i = tam ; sll <= i; i--){
+                // i = 3 ; 3 >= 1; 2
+                // i = 2 ; 2 >= 1 ; 1
+                // i = 1 ; 1 = 1 ; 0
+                // i = 0 ; fim
+                // so temos que transformar os sll ultimos em 0
+                vetor[i]  = 0; // elemnto 3 = 0
+                // elemento 2 = 0;
+                // elemento 1 = 0;
+        }*/
+        for(i = tam ; i < tam ; i++){
+		printf("elemento %d depois do SLL: %d \n",j, vetor[i] ); // imprimindo os elementos 1 por 1
+		j++;
+        }
+      /*for(i = 0; vetor[i] > 0; i++)
     {
         dec = dec + pow(2, i) * (vetor[i] % 10);
         vetor[i] = vetor[i] / 10;
     }
     printf("O valor decimal equivalente %d\n", dec);
-}
+
+   for (i = tam-1; i >= 0; i--) {
+		//printf("%c|", numero[i]);
+		if (vetor[i] == '1') {
+			dec = dec + pow(2,tam-1-i);
+		}
+	}
+	printf("Decimal: %i", dec);
+	*/
+	}
