@@ -34,7 +34,7 @@ int main(void)
         m = m*2;
     }
     printf("O numero convertido para decimal eh: %d \n",dec );
-
+// if ( i == 1 ) vetor[i] = 0; Ideia de resolucao
     printf("Entre com o valor para SLL \n");
     scanf("%d",&sll);
     j = 0; // só pra resetar o print mesmo
