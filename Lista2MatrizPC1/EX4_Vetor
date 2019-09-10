@@ -51,6 +51,11 @@ int main(void)
                 // elemento 2 = 0;
                 // elemento 1 = 0;
         }*/
+	
+	/* ANOTAÇÃO DA AULA 
+	SLL 2 / I = I+2
+	for(i = 0; i >
+	*/
         for(i = tam ; i < tam ; i++){
 		printf("elemento %d depois do SLL: %d \n",j, vetor[i] ); // imprimindo os elementos 1 por 1
 		j++;
