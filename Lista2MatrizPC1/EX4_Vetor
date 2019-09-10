@@ -40,6 +40,7 @@ int main(void)
     j = 0; // só pra resetar o print mesmo
 
        /* for(i = tam ; sll <= i; i--){
+       ?for(i = tam ; sll => i; i--){
                 // i = 3 ; 3 >= 1; 2
                 // i = 2 ; 2 >= 1 ; 1
                 // i = 1 ; 1 = 1 ; 0
